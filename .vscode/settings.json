@@ -1,0 +1,5 @@
+{
+    "liveServer.settings.port": 5502,
+    "appService.defaultWebAppToDeploy": "/subscriptions/cef9aa74-37d0-410d-a4e6-fb7840abded8/resourceGroups/appsvc_windows_westus3/providers/Microsoft.Web/sites/michaelguo07",
+    "appService.deploySubpath": "."
+}

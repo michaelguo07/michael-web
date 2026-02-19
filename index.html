@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Michael Guo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Michael Guo's amazing website">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="galaxy-bg" aria-hidden="true"></div>
+  </div>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <button type="button" class="galaxy-toggle-btn" id="galaxy-toggle" aria-label="Toggle galaxy background">
+    <span class="galaxy-toggle-text">Background</span>
+    <div class="galaxy-toggle-hover">
+      <span class="galaxy-toggle-hover-text">Background</span>
+      <span class="galaxy-toggle-arrow" aria-hidden="true">→</span>
+    </div>
+  </button>
+  <div class="easter-egg" title="Click & drag anywhere to draw!">✎</div>
+
+  <div class="app-grid">
+    <aside class="sidebar">
+      <a class="brand" href="#">Michael<span class="accent">Guo</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="#hero">Home</a>
+        <a href="#about" class="nav-revealable" data-section="about">About</a>
+        <a href="#projects" class="nav-revealable" data-section="projects">Projects</a>
+        <a href="#skills" class="nav-revealable" data-section="skills">Skills</a>
+        <a href="#resume" class="nav-revealable" data-section="resume">Resume</a>
+        <a href="#contact" class="nav-revealable" data-section="contact">Contact</a>
+      </nav>
+      <div class="sidebar-progress">
+        <div class="sidebar-progress-bar"><div class="sidebar-progress-fill"></div></div>
+      </div>
+      <div class="social">
+        <a href="https://github.com/michaelguo07" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/michaelguo07" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/guobropro/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section id="hero" class="panel hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">My Portfolio</p>
+          <h1>Hi I'm Michael</h1>
+          <p class="tag">A Statistics and Data Science student at the University of Texas at Austin 🤘</p>
+        </div>
+        <div class="hero-photo">
+          <img src="me.jpg" alt="Michael Guo" width="200" height="200">
+          <span class="hero-photo-secret-tooltip">Secret terminal commands: secret, hello, hookem, sudo, matrix</span>
+        </div>
+        <div class="hero-accent">
+          <span class="accent-line"></span>
+        </div>
+      </section>
+
+      <div class="terminal-inline">
+        <div class="terminal-panel terminal-open">
+          <div class="terminal-header">
+            <span class="terminal-title">michael@portfolio ~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-output">
+              <p>Type <code>help</code> for commands.</p>
+            </div>
+            <div class="terminal-input-line">
+              <span class="terminal-prompt">$</span>
+              <input type="text" class="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal command">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="panel about revealable">
+        <h2>About</h2>
+        <p class="about">Full time vibe coder, part time table tennis player, and sometimes a student.</p>
+        <p class="about-serious">I'm a Freshman Statistics and Data Science student at UT Austin. I've built tools for sports analytics, financial data structures, and web scrapers. When I'm not coding, you can either find me at the table tennis club or the dining halls</p>
+      </section>
+
+      <section id="skills" class="panel skills revealable">
+        <h2>Skills</h2>
+        <div class="skills-section">
+          <h3>Languages</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Chinese</span>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h3>Data & Analysis</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Statistical Modeling</span>
+            <span class="skill-tag">ggplot2</span>
+            <span class="skill-tag">Web Scraping</span>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h3>Tools & Frameworks</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">Excel</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="panel projects revealable">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>USATT Performance Analyzer</h3>
+            <p>Built a Chrome extension that upgrades USA Table Tennis player profiles with automated performance analytics and match insights.</p>
+            <a href="project-usatt.html" class="card-link">View →</a>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>Bitcoin Web Scraper & Analysis</h3>
+            <p>Developed a Python web scraper to collect live Bitcoin price and volume data and built an analysis pipeline in R to study order flow and trade activity.</p>
+            <a href="project-bitcoin.html" class="card-link">View →</a>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>NBA Player Performance Analysis</h3>
+            <p>Analyzed 20+ seasons of NBA statistics using R and Python to model playoff efficiency and estimate player contributions to team win rates.</p>
+            <a href="project-nba.html" class="card-link">View →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="panel resume revealable">
+        <h2>Resume</h2>
+        <a class="resume-download" href="https://drive.google.com/file/d/1wpUxuG7XUHgEVY5cGFRt8FZaCT4L3PaK/view?usp=sharing" target="_blank" rel="noopener">
+          <span class="resume-icon">↓</span>
+          <span>Download Resume (PDF)</span>
+        </a>
+      </section>
+
+      <section id="contact" class="panel contact revealable">
+        <h2>Contact</h2>
+        <p>Reach me at <a href="mailto:mg.michaelguo@gmail.com">mg.michaelguo@gmail.com</a></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script type="module" src="js/galaxy-bg.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/terminal.js?v=2" defer></script>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/blob3d.js" defer></script>
+  <script src="js/drag-trail.js" defer></script>
+  <script src="js/galaxy-toggle.js" defer></script>
+  <script src="js/sidebar.js" defer></script>
+</body>
+</html>

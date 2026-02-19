@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA Player Performance Analysis — Michael Guo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="galaxy-bg" aria-hidden="true"></div>
+  </div>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <button type="button" class="galaxy-toggle-btn" id="galaxy-toggle" aria-label="Toggle galaxy background">
+    <span class="galaxy-toggle-text">Background</span>
+    <div class="galaxy-toggle-hover">
+      <span class="galaxy-toggle-hover-text">Background</span>
+      <span class="galaxy-toggle-arrow" aria-hidden="true">→</span>
+    </div>
+  </button>
+  <div class="easter-egg" title="Click & drag anywhere to draw!">✎</div>
+
+  <div class="app-grid">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">Michael<span class="accent">Guo</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about" class="nav-revealable" data-section="about">About</a>
+        <a href="index.html#projects" class="nav-revealable" data-section="projects">Projects</a>
+        <a href="index.html#skills" class="nav-revealable" data-section="skills">Skills</a>
+        <a href="index.html#resume" class="nav-revealable" data-section="resume">Resume</a>
+        <a href="index.html#contact" class="nav-revealable" data-section="contact">Contact</a>
+      </nav>
+      <div class="sidebar-progress">
+        <div class="sidebar-progress-bar"><div class="sidebar-progress-fill"></div></div>
+      </div>
+      <div class="social">
+        <a href="https://github.com/michaelguo07" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/michaelguo07" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/guobropro/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </aside>
+
+    <main class="main project-main">
+      <a href="index.html#projects" class="back-link">← Back to projects</a>
+
+      <article class="project-detail">
+        <h1>NBA Player Performance Analysis</h1>
+
+        <section class="project-links">
+          <a href="https://colab.research.google.com/drive/1-kqkT8uZ6DE09WRF5nMTEhXJGiwWeHqh?usp=sharing" class="project-btn" target="_blank" rel="noopener">View on Google Colab</a>
+        </section>
+
+        <section class="project-description">
+          <h2>Overview</h2>
+          <p>Analyzed 20+ seasons of NBA statistics using R and Python to model playoff efficiency and estimate player contributions to team win rates. Applied regression and quantitative methods and built ggplot visualizations to highlight performance trends and key predictive factors.</p>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <script type="module" src="js/galaxy-bg.js"></script>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/galaxy-toggle.js" defer></script>
+  <script src="js/sidebar.js" defer></script>
+</body>
+</html>

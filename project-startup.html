@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stock Sector Screener — Michael Guo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="galaxy-bg" aria-hidden="true"></div>
+  </div>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <button type="button" class="galaxy-toggle-btn" id="galaxy-toggle" aria-label="Toggle galaxy background">
+    <span class="galaxy-toggle-text">Background</span>
+    <div class="galaxy-toggle-hover">
+      <span class="galaxy-toggle-hover-text">Background</span>
+      <span class="galaxy-toggle-arrow" aria-hidden="true">→</span>
+    </div>
+  </button>
+  <div class="easter-egg" title="Click & drag anywhere to draw!">✎</div>
+
+  <div class="app-grid">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">Michael<span class="accent">Guo</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about" class="nav-revealable" data-section="about">About</a>
+        <a href="index.html#projects" class="nav-revealable" data-section="projects">Projects</a>
+        <a href="index.html#skills" class="nav-revealable" data-section="skills">Skills</a>
+        <a href="index.html#resume" class="nav-revealable" data-section="resume">Resume</a>
+        <a href="index.html#contact" class="nav-revealable" data-section="contact">Contact</a>
+      </nav>
+      <div class="sidebar-progress">
+        <div class="sidebar-progress-bar"><div class="sidebar-progress-fill"></div></div>
+      </div>
+      <div class="social">
+        <a href="https://github.com/michaelguo07" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/michaelguo07" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/guobropro/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </aside>
+
+    <main class="main project-main">
+      <a href="index.html#projects" class="back-link">← Back to projects</a>
+
+      <article class="project-detail">
+        <h1>Stock Sector Screener</h1>
+        <p class="project-subtitle">Co-founded startup · $1M valuation</p>
+
+        <section class="project-links">
+          <a href="#" class="project-btn" target="_blank" rel="noopener">Website</a>
+          <a href="#" class="project-btn secondary" target="_blank" rel="noopener">Learn more</a>
+        </section>
+
+        <section class="project-description">
+          <h2>Overview</h2>
+          <p>Co-founded a startup (pre-launch, name TBD) with a $1M valuation. The product asks users which stock market sectors they're interested in, then scans all stocks within those sectors and ranks the best picks based on PE ratio, market cap, and other advanced financial metrics.</p>
+          <p>Add more detail here: your role, tech stack, metrics used, traction, etc.</p>
+        </section>
+
+        <section class="project-demo">
+          <h2>Demo</h2>
+          <p class="demo-hint">Add screenshots, a product walkthrough, or demo video below.</p>
+          <div class="demo-placeholder">
+            <img src="assets/project-startup-demo.png" alt="Stock sector screener demo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="demo-fallback" style="display:none;">
+              <span>Add <code>assets/project-startup-demo.png</code> or embed content here</span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <script type="module" src="js/galaxy-bg.js"></script>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/galaxy-toggle.js" defer></script>
+  <script src="js/sidebar.js" defer></script>
+</body>
+</html>
