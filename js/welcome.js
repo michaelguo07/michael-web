@@ -12,7 +12,9 @@
 
   function isWelcomeDone() {
     try {
-      return sessionStorage.getItem(WELCOME_DONE_KEY) === 'true';
+      var doneThisSession = sessionStorage.getItem(WELCOME_DONE_KEY) === 'true';
+      var hasGalaxyPreference = localStorage.getItem(GALAXY_KEY) !== null && localStorage.getItem(GALAXY_KEY) !== undefined;
+      return doneThisSession && hasGalaxyPreference;
     } catch (_) {
       return false;
     }
