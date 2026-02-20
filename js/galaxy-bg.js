@@ -367,13 +367,21 @@ function isGalaxyPreferredOn() {
   }
 }
 
+function isWelcomeDone() {
+  try {
+    return sessionStorage.getItem('welcome-done') === 'true';
+  } catch (_) {
+    return false;
+  }
+}
+
 window.addEventListener('galaxy-show', onGalaxyShow);
 window.addEventListener('galaxy-hide', onGalaxyHide);
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    if (isGalaxyPreferredOn()) runGalaxy();
+    if (isWelcomeDone() && isGalaxyPreferredOn()) runGalaxy();
   });
 } else {
-  if (isGalaxyPreferredOn()) runGalaxy();
+  if (isWelcomeDone() && isGalaxyPreferredOn()) runGalaxy();
 }

@@ -30,6 +30,17 @@
     }
   }
 
+  window.addEventListener('galaxy-state-change', (e) => {
+    const on = e.detail.on;
+    if (galaxyEl) galaxyEl.hidden = !on;
+    if (btn) {
+      btn.classList.toggle('galaxy-toggle-on', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      const text = btn.querySelectorAll('.galaxy-toggle-text, .galaxy-toggle-hover-text');
+      text.forEach((el) => { el.textContent = on ? 'Galaxy On' : 'Galaxy Off'; });
+    }
+  });
+
   if (btn) {
     const on = isOn();
     setGalaxy(on);

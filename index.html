@@ -11,6 +11,23 @@
   <meta name="description" content="Michael Guo's amazing website">
 </head>
 <body>
+  <div class="welcome-screen" id="welcome-screen" aria-hidden="false">
+    <div class="welcome-aurora" id="welcome-aurora"></div>
+    <div class="welcome-content">
+      <h2 class="welcome-title">Hello World</h2>
+      <p class="welcome-subtitle">How would you like to explore?</p>
+      <div class="welcome-buttons">
+        <button type="button" class="welcome-btn welcome-btn-stars" data-stars="true">
+          <span class="welcome-btn-icon" aria-hidden="true">✦</span>
+          <span class="welcome-btn-label">Explore with stars</span>
+        </button>
+        <button type="button" class="welcome-btn welcome-btn-plain" data-stars="false">
+          <span class="welcome-btn-icon" aria-hidden="true">○</span>
+          <span class="welcome-btn-label">Explore without stars</span>
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="page-bg">
     <div class="galaxy-bg" aria-hidden="true"></div>
   </div>
@@ -154,6 +171,7 @@
 
   <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
   <script type="module" src="js/galaxy-bg.js"></script>
+  <script src="js/welcome.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/terminal.js?v=2" defer></script>
   <script src="js/cursor.js" defer></script>
